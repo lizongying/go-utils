@@ -7,13 +7,13 @@ import (
 
 func main() {
 	a := []string{"1", "3", "2"}
-	utils.AscSort(a)
+	utils.SliceAsc(a)
 
 	//[1 2 3]
 	fmt.Println(a)
 
 	b := []uint64{1, 3, 2}
-	utils.DescSort(b)
+	utils.SliceDesc(b)
 
 	//[3 2 1]
 	fmt.Println(b)
