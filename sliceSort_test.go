@@ -131,7 +131,7 @@ func TestSliceDesc_Sort(t *testing.T) {
 	}())
 }
 
-func TestAscSort(t *testing.T) {
+func TestSliceAsc(t *testing.T) {
 	assert.Equal(t, []string{"1", "2", "3"}, func() []string {
 		a := []string{"1", "3", "2"}
 		SliceAsc(a)
@@ -139,7 +139,7 @@ func TestAscSort(t *testing.T) {
 	}())
 }
 
-func TestDescSort(t *testing.T) {
+func TestSliceDesc(t *testing.T) {
 	assert.Equal(t, []string{"3", "2", "1"}, func() []string {
 		a := []string{"1", "3", "2"}
 		SliceDesc(a)
